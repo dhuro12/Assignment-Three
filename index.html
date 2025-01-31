@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navColor: '#FFF9F4', // Define the custom color
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+        .adlam-display-regular {
+  font-family: "ADLaM Display", serif;
+  
+  
+}
+.sora-display {
+  font-family: "Sora", serif;
+  
+}
+
+    </style>
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <title>Assignment-3</title>
+</head>
+<body class="adlam-display-regular bg-white">
+    <header >
+        <nav class="sora-display">
+            <div class="navbar bg-navColor  lg:px-32">
+                <div class="navbar-start">
+                  
+                 <div class="flex justify-center items-center gap-2">
+                    <img src="c1-assets/logo-header.png" alt="">
+                    <h1 class="text-2xl">Browse<span class="text-yellow-400">4</span>Pets</a></h1>
+                 </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 font-medium">
+                    <li><a>Find a Pet</a></li>
+                    <li><a>Breeds</a>
+</li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <div class="lg:space-x-4 lg:flex hidden">
+                    <i class="fa-regular fa-bell text-2xl font-thin tex"></i>
+                  <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                  <a class="btn btn-warning bg-transparent px-6 py-2 text-xl font-normal">Login</a>
+                  <a class="btn btn-warning px-6 text-xl font-normal">Register</a>
+                  </div>
+                 <div >
+                    <style>
+                        .bold-svg {
+                          stroke-width:3; 
+                          stroke: black; 
+                        }
+                      </style>
+                      
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 bold-svg lg:hidden"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4 6h16M4 12h8m-8 6h16"
+                        />
+                      </svg>
+                 </div>
+                </div>
+              </div>
+        </nav>
+
+
+        <!--Home page section-->
+        <section class="mb-20 adlam-display-regular">
+            <div class="hero">
+                <div class="z-10 lg:absolute lg:left-80 lg:top-32 p-8 lg:p-0">
+                    <h1 class="text-5xl font-bold">Pamper Your Pet,<br> Because They Deserve <br>the Bes</h1>
+                    <p class="py-6 lg:w-2/4 .sora-display font-thin opacity-45">
+                        Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!!
+                    </p>
+                    <button class="btn btn-warning px-6 text-xl sora-display font-medium">Find a Pet</button>
+                </div>
+                <div class="hero-content">
+                  <img
+                    src="c1-assets/cat-big.png"
+                    class=" rounded-lg relative top-44 lg:top-0" />
+                 
+                </div>
+              </div>
+        </section>
+    </header>
+</body>
+</html>
