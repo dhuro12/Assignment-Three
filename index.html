@@ -32,6 +32,22 @@
 .sora-display {
   font-family: "Sora", serif;
   
+} 
+
+.catImage {
+  position: relative;
+  animation: driveIn 1.5s ease-out forwards;
+}
+
+@keyframes driveIn {
+  from {
+    transform: translateX(100vw); /* Start off-screen (right) */
+    opacity: 0; /* Initially invisible */
+  }
+  to {
+    transform: translateX(0); /* Moves to its actual position */
+    opacity: 1; /* Fully visible */
+  }
 }
 
     </style>
@@ -104,9 +120,9 @@
                     <button class="btn btn-warning px-6 text-xl sora-display font-medium">Find a Pet</button>
                 </div>
                 <div class="hero-content">
-                  <img
+                  <img 
                     src="c1-assets/cat-big.png"
-                    class=" rounded-lg relative top-44 lg:top-0" />
+                    class=" rounded-lg relative top-44 lg:top-0 catImage" />
                  
                 </div>
               </div>
@@ -118,7 +134,7 @@
         <div class="lg:px-60 my-6 text-4xl">
 <h1>Browse By Categories</h1>
         </div>
-        <div class=" sora-display grid md:grid-cols-3 lg:grid-cols-6 grid-cols-2 lg:px-50 gap-4">
+        <div class=" sora-display grid md:grid-cols-3 lg:grid-cols-6 grid-cols-2 lg:px-60 gap-4">
           <div class="flex flex-col items-center bg-[#F9DF8A] rounded-lg p-6">
             <div class="my-4">
               <div class="w-24 h-24 rounded-full bg-white flex items-center justify-center ">
@@ -189,7 +205,7 @@
               </div>
             </div>
             <h1 class="font-bold my-3">Cat Food</h1>
-            <button class="btn btn-warning">Order Now</button>
+            <button class="btn btn-warning bg-yellow-300">Order Now</button>
           </div>
           <div class="flex flex-col items-center bg-[#fffdbd] rounded-lg p-6">
             <div class="avatar my-4">
@@ -198,7 +214,7 @@
               </div>
             </div>
             <h1 class="font-bold my-3">Dog Food</h1>
-            <button class="btn btn-warning">Order Now</button>
+            <button class="btn btn-warning bg-yellow-300">Order Now</button>
           </div>
           <div class="flex flex-col items-center bg-[#fffdbd] rounded-lg p-6">
             <div class="avatar my-4">
@@ -207,12 +223,113 @@
               </div>
             </div>
             <h1 class="font-bold my-3">Bird Food</h1>
-            <button class="btn btn-warning">Order Now</button>
+            <button class="btn btn-warning bg-yellow-300">Order Now</button>
           </div>
           
           
           
         
+        </div>
+      </section>
+
+      <!--Pet products-->
+      <section class="sora-display bg-red-50 ">
+        <div>
+          <div class="flex">
+            <h1>T-shirts for Dogs</h1>
+            <p>Discover world of treats,toys,and essentials handpicked for</p>
+            <button class="btn">Normal</button>
+          </div>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex  items-center gap-2 bg-white w-1/2 p-4">
+             <div class="w-20 h-20 bg-red-50 flex justify-center items-center"> <img src="c1-assets/dog-cartoon.png" alt=""></div>
+             <div class="flex flex-col">
+              <div class="flex justify-center items-center gap-2"><i class="fa-solid fa-star  text-yellow-500""></i>
+                <span>4.5</span></div>
+              <h1 class="font-semibold">Pet Bed</h1>
+              <span class="font-medium">39.99$</span>
+             </div>
+            </div>
+            <div class="flex  items-center gap-2 bg-white w-1/2 p-4">
+              <div class="w-20 h-20 bg-red-50 flex justify-center items-center"> <img src="c1-assets/dog-cartoon.png" alt=""></div>
+              <div class="flex flex-col">
+               <div class="flex justify-center items-center gap-2"><i class="fa-solid fa-star  text-yellow-500""></i>
+                 <span>4.5</span></div>
+               <h1 class="font-semibold">Pet Bed</h1>
+               <span class="font-medium">39.99$</span>
+              </div>
+             </div>
+             <div class="flex  items-center gap-2 bg-white w-1/2 p-4">
+              <div class="w-20 h-20 bg-red-50 flex justify-center items-center"> <img src="c1-assets/dog-cartoon.png" alt=""></div>
+              <div class="flex flex-col">
+               <div class="flex justify-center items-center gap-2"><i class="fa-solid fa-star  text-yellow-500""></i>
+                 <span>4.5</span></div>
+               <h1 class="font-semibold">Pet Bed</h1>
+               <span class="font-medium">39.99$</span>
+              </div>
+             </div>
+             <div class="flex  items-center gap-2 bg-white w-1/2 p-4">
+              <div class="w-20 h-20 bg-red-50 flex justify-center items-center"> <img src="c1-assets/dog-cartoon.png" alt=""></div>
+              <div class="flex flex-col">
+               <div class="flex justify-center items-center gap-2"><i class="fa-solid fa-star  text-yellow-500""></i>
+                 <span>4.5</span></div>
+               <h1 class="font-semibold">Pet Bed</h1>
+               <span class="font-medium">39.99$</span>
+              </div>
+             </div>
+             <div class="flex  items-center gap-2 bg-white w-1/2 p-4">
+              <div class="w-20 h-20 bg-red-50 flex justify-center items-center"> <img src="c1-assets/dog-cartoon.png" alt=""></div>
+              <div class="flex flex-col">
+               <div class="flex justify-center items-center gap-2"><i class="fa-solid fa-star  text-yellow-500""></i>
+                 <span>4.5</span></div>
+               <h1 class="font-semibold">Pet Bed</h1>
+               <span class="font-medium">39.99$</span>
+              </div>
+             </div>
+             <div class="flex  items-center gap-2 bg-white w-1/2 p-4">
+              <div class="w-20 h-20 bg-red-50 flex justify-center items-center"> <img src="c1-assets/dog-cartoon.png" alt=""></div>
+              <div class="flex flex-col">
+               <div class="flex justify-center items-center gap-2"><i class="fa-solid fa-star  text-yellow-500""></i>
+                 <span>4.5</span></div>
+               <h1 class="font-semibold">Pet Bed</h1>
+               <span class="font-medium">39.99$</span>
+              </div>
+             </div>
+             <div class="flex  items-center gap-2 bg-white w-1/2 p-4">
+              <div class="w-20 h-20 bg-red-50 flex justify-center items-center"> <img src="c1-assets/dog-cartoon.png" alt=""></div>
+              <div class="flex flex-col">
+               <div class="flex justify-center items-center gap-2"><i class="fa-solid fa-star  text-yellow-500""></i>
+                 <span>4.5</span></div>
+               <h1 class="font-semibold">Pet Bed</h1>
+               <span class="font-medium">39.99$</span>
+              </div>
+             </div>
+             <div class="flex  items-center gap-2 bg-white w-1/2 p-4">
+              <div class="w-20 h-20 bg-red-50 flex justify-center items-center"> <img src="c1-assets/dog-cartoon.png" alt=""></div>
+              <div class="flex flex-col">
+               <div class="flex justify-center items-center gap-2"><i class="fa-solid fa-star  text-yellow-500""></i>
+                 <span>4.5</span></div>
+               <h1 class="font-semibold">Pet Bed</h1>
+               <span class="font-medium">39.99$</span>
+              </div>
+             </div>
+             <div class="flex  items-center gap-2 bg-white w-1/2 p-4">
+              <div class="w-20 h-20 bg-red-50 flex justify-center items-center"> <img src="c1-assets/dog-cartoon.png" alt=""></div>
+              <div class="flex flex-col">
+               <div class="flex justify-center items-center gap-2"><i class="fa-solid fa-star  text-yellow-500""></i>
+                 <span>4.5</span></div>
+               <h1 class="font-semibold">Pet Bed</h1>
+               <span class="font-medium">39.99$</span>
+              </div>
+             </div>
+           
+             
+             
+            
+             
+             
+             
+          </div>
         </div>
       </section>
     </main>
