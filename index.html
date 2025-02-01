@@ -41,12 +41,12 @@
 
 @keyframes driveIn {
   from {
-    transform: translateX(100vw); /* Start off-screen (right) */
-    opacity: 0; /* Initially invisible */
+    transform: translateX(100vw); 
+    opacity: 0; 
   }
   to {
-    transform: translateX(0); /* Moves to its actual position */
-    opacity: 1; /* Fully visible */
+    transform: translateX(0); 
+    opacity: 1; 
   }
 }
 
@@ -60,7 +60,7 @@
 <body class="adlam-display-regular bg-white">
     <header >
         <nav class="sora-display">
-            <div class="navbar bg-navColor  lg:px-24">
+            <div class="navbar bg-navColor  lg:px-24 px-6">
                 <div class="navbar-start">
                   
                  <div class="flex justify-center items-center gap-2">
@@ -107,6 +107,7 @@
                 </div>
               </div>
         </nav>
+        <hr class=" border-black lg:hidden">
 
 
         <!--Home page section-->
@@ -335,7 +336,7 @@
       </section>
 
       <!--Low price-->
-      <section class="mb-20 p-10 lg:p-2 md:p-5">
+      <section class=" p-2 lg:p-2 md:p-5">
         <div class="lg:px-24 my-6 text-4xl">
           <h1>Everyday Low Price</h1>
         </div>
@@ -368,10 +369,33 @@
           </div>
         </div>
       </section>
+
+      <section class="mb-20 lg:p-20 md:p-5 container mx-auto relative -bottom-96 ">
+        <div class=" sora-display hero bg-[#FFF9F4] h-auto rounded-xl mx-auto">
+          <div class="hero-content flex-col lg:flex-row gap-12">
+            <img
+              src="c1-assets/cute-pet-small.png"
+               / class="w-full">
+            <div class="text-center lg:text-left">
+              <h1 class="adlam-display-regular text-4xl font-bold ">Get Pawsome News!</h1>
+              <p class="py-6 text-base">
+                Exclusive training tips, ticks, product deals and more.
+              </p>
+             
+              <input
+              type="email"
+              placeholder="Enter email..."
+              class="input   w-full max-w-xs block mx-auto lg:mx-0" />
+             
+              <button class="btn bg-yellow-300 my-4">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
    
-      <footer class=" bg-[#FFDC26] bg-opacity-50 sora-display footer bg-base-300 text-base-content lg:p-10 flex lg:justify-center lg:items-center  lg:text-center pt-72">
-       <div class="grid lg:grid-cols-3 md:grid-cols-3 w-full lg:place-items-center p-5 gap-y-12">
+      <footer class=" bg-[#FFDC26] bg-opacity-50 sora-display footer bg-base-300 text-base-content lg:p-10 flex lg:justify-center lg:items-center  lg:text-center lg:pt-72 pt-96">
+       <div class="grid lg:grid-cols-3 md:grid-cols-3 lg:place-items-center p-5 gap-y-12">
         <nav class="flex flex-col lg:p-10 items-start">
           <div class="flex flex-col items-start gap-4">
             <div class="flex justify-center items-center gap-2">
